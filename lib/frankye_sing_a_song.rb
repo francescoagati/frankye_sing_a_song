@@ -10,11 +10,11 @@ class FrankyeSingASong < Sinatra::Application
   set :root, APP_ROOT  
 
   get '/' do
-    haml :/
+    haml "index"
   end
 
-  post '/:id' do
-    haml :/:id
+  get '/shoutcast/genre/:genre' do
+    "todo"
   end
 
 
